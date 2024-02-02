@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Pictures</title>
+    <link rel="stylesheet" href="../css/mystyles.css">
+    <link rel="stylesheet" href="../css/media.css">
+    <style>
+        #Youtube{
+            text-decoration: none;
+            color: red;
+            font-weight: bolder;
+        }
+        #Youtube:hover{
+            text-decoration: underline;
+            font-size: 1.1em;
+        }
+        #galleryMain{
+            height: 230rem ;
+        }
+        .gallery{
+            height: fit-content;
+            margin-top: -3.7rem;
+        }
+        
+        
+        @media only screen and (min-width:992px){
+            #galleryMain{
+                height: fit-content;
+            }
+            .gallery{
+                height: fit-content;
+            }
+            .figurecontainer{
+               width: 36%;
+               height: fit-content;
+               float: left;
+               margin: 2% 7%;
+               background-color: rgba(125, 1, 125, 0.4);
+               border-radius: 20%;
+            }
+        }
+
+        @media only screen and (max-width: 992px) and (min-width: 600px){
+            #galleryMain{
+                height: fit-content;
+            }
+            .gallery{
+                height: fit-content;
+            }
+            .figurecontainer{
+                width: 36%;
+                height: fit-content;
+                float: left;
+                margin: 2% 7%;
+                background-color: rgba(125, 1, 125, 0.4);
+                border-radius: 20%;
+            }
+        }
+        @media only screen and (max-width : 412px) and (min-width : 0px){
+            main{
+                height: fit-content;
+                overflow: none;
+                width: 90%; 
+            }
+            
+            .gallery{
+                margin-top : -7rem;
+                height: fit-content;
+            }
+        }
+
+        
+    </style>
+</head>
+<!-- this page doesn't follow the rules for the classes like the other page similar to this one does
+instead, I had to create internal css style for it and now seems it works fine-->
+<body>
+       <header>
+         <img id="logo" src="../assets/5uvyr1fv.png" alt="logo">
+         <h1 id="title">Twincuz Production</h1>
+         <div class="navigation">
+            <a href="../index.html">Home</a>
+            <a href="../about.html">About Us</a>
+            <a href="../contact.html">Contact Us</a>
+            <div class="clearFloat"></div>
+        </div>
+       </header>
+       <main id="galleryMain">
+           <h1 class="subtitles" id="secondtitle">The Darkness, Your Images</h1>
+           <p class="descriptions"> In this page you will find pictures uploaded from the users on our
+            !Blog page! Lot of you are enjoying our game and sharing with us their progresses!<br> <br>
+            Sometimes a bug in the game is discovered like this , but as well even a simple feedback 
+            either good or bad help us improve!<br> <br>
+            For this we would like to thank you for everything and we will keep the hard work from our
+            side!!!! Don't forget to follow us on our !Blog page and on our <a id="Youtube" href="https://www.youtube.com/">
+                Youtube</a> channel <br> <br>
+            If this is not the page you are looking for use the following navigation bar to move between
+            the pages of our <strong> <span style="color: rgba(2, 188, 2, 0.8);">Media</span> 
+                <span style="color:rgba(125, 1, 125, 0.8) ;" >Gallery</span></strong>
+           </p> <br> <br>
+           <div class="internalnav">
+            <div><a href="../gallery.html">Media Gallery Home Page</a></div> <br>
+            <div><a href="ourPicture.html">The Darkness, Our Images</a></div> <br>
+            
+           </div> <br> <br>
+        
+         <div class="gallery">
+            <div class="figurecontainer userpic" >
+            <figure style="background-color:rgba(138, 43, 226,0.1);" class="imgcontainer userpic">
+                <img class="galleryimg left" src="beginning.jpg" alt="beginning">
+                <caption>First Quest!</caption>
+            </figure>
+            <span class="review white"> That bush will be my first trial!!! </span> <br> <br>
+            <span class="signature white" style="margin-left: 9rem;">Image by User202</span>
+            </div>
+            <div class="figurecontainer userpic" >
+            <figure style="background-color:rgba(138, 43, 226,0.1);" class="imgcontainer userpic">
+                <img class="galleryimg right" src="Rocky Montains.jpg" alt="Rocky Montains">
+                <caption>Rocky Mountains!!!</caption>
+            </figure>
+            <span class="review white"> Out from the cove!! Should I Jump? </span> <br> <br>
+            <span class="signature white" style="margin-left: 9rem;">Image by Dragon00</span>
+            </div>
+            <div class="figurecontainer userpic" >
+            <figure style="background-color:rgba(138, 43, 226,0.1);" class="imgcontainer userpic">
+                <img class="galleryimg left" src="Ville Beuf.jpg" alt="Village">
+                <caption>Fallen Village</caption>
+            </figure>
+            <span class="review white"> All hopes are lost in this place... </span> <br> <br>
+            <span class="signature white" style="margin-left: 9rem;">Image by Ffurious</span>
+            </div>
+            <div class="figurecontainer userpic" >
+            <figure style="background-color:rgba(138, 43, 226,0.1);" class="imgcontainer userpic">
+                <img class="galleryimg right" src="Enemies.jpg" alt="Hard Battle">
+                <caption>The Phantom Swamp</caption>
+            </figure>
+            <span class="review white"> Enemies here are quite though! Ouch!</span> <br> <br>
+            <span class="signature white" style="margin-left: 9rem;">Image by User122</span>
+            </div>
+            <div class="figurecontainer userpic" >
+            <figure style="background-color:rgba(138, 43, 226,0.1);" class="imgcontainer userpic">
+                <img class="galleryimg left" src="enemies2jpg.jpg" alt="Fast Enemies">
+                <caption>Enemies Are Too Fast!</caption>
+            </figure>
+            <span class="review white"> It seems like I'm too slow for them! </span> <br> <br>
+            <span class="signature white" style="color: white; margin-left: 9rem;">Image by Squall35</span>
+            </div>
+            <div class="figurecontainer userpic" >
+            <figure style="background-color:rgba(138, 43, 226,0.1);" class="imgcontainer userpic">
+                <img class="galleryimg right" src="enemiesjpg.jpg" alt="Which Technique">
+                <caption>Which Technique Should I Use?</caption>
+            </figure>
+            <span class="review white"> Physical hits seems useless here !!</span> <br> <br>
+            <span class="signature white" style="color: white; margin-left: 9rem;">Image by Player5</span>
+            </div>
+            <div class="figurecontainer userpic" >
+            <figure style="background-color:rgba(138, 43, 226,0.1);" class="imgcontainer userpic">
+                <img class="galleryimg left" src="elfic forest.jpg" alt="Elfic Forest">
+                <caption>Elfic Forest</caption>
+            </figure>
+            <span class="review white"> Such mysterious and eerie place... </span> <br> <br>
+            <span class="signature white" style="margin-left: 9rem;">Image by Lita</span>
+            </div>
+            <div class="figurecontainer userpic" >
+            <figure style="background-color:rgba(138, 43, 226,0.1);" class="imgcontainer userpic">
+                <img class="galleryimg right" src="obtained object.jpg" alt="Object Found">
+                <caption>Changed My Party Members</caption>
+            </figure>
+            <span class="review white"> Elf helped me open the green chests! </span> <br> <br>
+            <span class="signature white" style="margin-left: 9rem;">Image by Cloud89</span>
+            </div>
+            <div class="figurecontainer userpic" >
+            <figure style="background-color:rgba(138, 43, 226,0.1);" class="imgcontainer userpic">
+                <img class="galleryimg left" src="darkCastle.jpg" alt="Mansion">
+                <caption>The Theatre In The Mansion...</caption>
+            </figure>
+            <span class="review white"> Just me or something is strange here? </span> <br> <br>
+            <span class="signature white" style="margin-left: 9rem;">Image by Darknight</span>
+            </div>
+            <div class="figurecontainer userpic" >
+            <figure style="background-color:rgba(138, 43, 226,0.1);" class="imgcontainer userpic">
+                <img class="galleryimg right" src="Dreamland.jpg" alt="Dream Land">
+                <caption>Trapped In Dream Land</caption>
+            </figure>
+            <span class="review white"> Where is the way out from here? </span> <br> <br>
+            <span class="signature white" style="margin-left: 9rem;">Image by Dreamer</span>
+            </div>
+            <div class="figurecontainer userpic" >
+            <figure style="background-color:rgba(138, 43, 226,0.1);" class="imgcontainer userpic">
+                <img class="galleryimg left" src="snowyfield.jpg" alt="Snowy Field">
+                <caption>Beware The Snowman!</caption>
+            </figure>
+            <span class="review white" > Little guy helped against hypothermia! </span> <br> <br>
+            <span class="signature white" style="margin-left: 9rem;">Image by Waltz32</span>
+            </div>
+            <div class="figurecontainer userpic" >
+            <figure style="background-color:rgba(138, 43, 226,0.1);" class="imgcontainer userpic">
+                <img class="galleryimg right" src="firecave.jpg" alt="Fire Cave">
+                <caption>Fire Doungeon</caption>
+            </figure>
+            <span class="review white"> Graphics quite good in this place! </span> <br> <br>
+            <span class="signature white" style="margin-left: 9rem;">Image by Nina12</span>
+            </div> <br> <br> 
+            <div class="clearFloat"></div>
+            
+       </main>
+       
+       <footer>
+        <button id="backtop"><a href="#logo">Back To Top</a></button>
+        <p id="info">For more informations e-mail us on Twincuzp@Gmail.com</p>
+        <div class="clearFloat"></div>
+       </footer>
+</body>
+</html>

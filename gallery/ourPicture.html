@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Pictures</title>
+    <link rel="stylesheet" href="../css/mystyles.css">
+    <link rel="stylesheet" href="../css/media.css">
+    <style>
+        #walktrough{
+            font-size: 1.1em;
+            font-weight: bolder;
+            color: red;
+        }
+        #walktrough a{
+            color: red;
+            text-decoration: none;
+        }
+        #walktrough a:hover{
+            font-size: 1.2em;
+        }
+        main{
+            max-height: fit-content;
+        }
+        .gallery{
+            min-height: fit-content;
+            
+        }
+        @media only screen and (min-width :992px){
+            main{
+                height : 132rem
+            }
+            .gallery{
+                height: 102rem;
+            }    
+        }
+        @media only screen and (max-width : 992px) and (min-width: 600px){
+            main{
+                height : 132rem
+            }
+            .gallery{
+                height: 102rem;
+            } 
+        }
+        @media only screen and (max-width : 412px) and (min-width : 0px){
+            main{
+                height: fit-content;
+                overflow: none;
+                width: 90%;     
+                    } 
+            
+            .gallery{
+                margin-top : -7rem;
+                height: fit-content;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <img id="logo" src="../assets/5uvyr1fv.png" alt="logo">
+        <h1 id="title">Twincuz Production</h1>
+        <div class="navigation">
+            <a href="../index.html">Home</a>
+            <a href="../about.html">About Us</a>
+            <a href="../contact.html">Contact Us</a>
+            <div class="clearFloat"></div>
+        </div>
+    </header>
+    <main id="galleryMain">
+        <h1 class="subtitles" id="firstitle">The Darkness, Our Images</h1>
+        <p class="descriptions"> In this page you will find pictures uploaded from our team giving
+            you basic information in how The Darkness works! <br> <br> If you are a new player you may
+            find those informations very useful to begin your adventure <br> <br>
+            If you looking for something more detailed than simple instruction don't forget our complete
+            <span id="walktrough"><a href="../error.html">Walktrough Guide</a></span> which you can find in our Blog! page!!! <br> <br>
+            If this is not the page you are looking for use the following navigation bar to move between
+            the pages of our <strong> <span style="color: rgba(2, 188, 2, 0.8);">Media</span> 
+                <span style="color:rgba(125, 1, 125, 0.8) ;" >Gallery</span></strong>
+
+        </p> <br><br>
+        <div class="internalnav">
+            <div><a href="../gallery.html">Media Gallery Home Page</a></div> <br>
+            <div><a href="yourPicture.html">The Darkness, Your Images</a></div> <br>
+            <br>
+        </div><br> <br>
+        
+        
+        <div class="gallery"> <!-- images become bigger when hover them, and traslate on medium and big
+        devices, effect is very cool, but I wonder if on mobile phone the effect will render as there
+        will be not hovering with the mouse on them...-->
+            <div class="figurecontainer figleft" >
+            <figure class="imgcontainer">
+                <img class="galleryimg left"  src="Game Menu.jpg" alt="Menu">
+                <caption>Main Menu</caption>
+            </figure>
+            <span class="review white">Welcome where everything starts traveller, press
+                New Game to start a new fantastic quest!!!
+            </span>
+            </div> 
+             <div class="figurecontainer figright" >
+            <figure class="imgcontainer">
+                <img class="galleryimg right" src="Loadmenu.jpg" alt="Load Menu">
+                <caption>Load/Save Menu</caption>
+            </figure>
+            <span class="review white"> Once you saved your data 
+            at least once you can use the "Load Menu" to start the game from where you left! </span>
+            </div>
+            <div class="figurecontainer figleft" >
+            <figure class="imgcontainer">
+                <img class="galleryimg left" src="mainMenu.jpg" alt="Game Menu">
+                <caption>Game Menu</caption>
+            </figure>
+            <span class="review white">To view the Main Menu you will need to press Enter on your Keyboard and Esc
+                to come out!
+            </span>
+            </div>
+            <div class="figurecontainer figright" >
+            <figure class="imgcontainer">
+                <img class="galleryimg right" src="items menu.png" alt="Item Menu">
+                <caption>Items Menu</caption>
+            </figure>
+            <span class="review white"> Use "Item" inside the Main Menu to see 
+                all the items aquired so far during your quest ! </span>
+            </div>
+            <div class="figurecontainer figleft" >
+            <figure class="imgcontainer">
+                <img class="galleryimg left" src="tec menu.png" alt="Skills Menu">
+                <caption>Skills Menu</caption>
+            </figure>
+            <span class="review white"> Use "Skill" inside the Main Menu to see 
+                all the skills each Charachter learned so far ! </span>
+            </div>
+            <div class="figurecontainer figright" >
+            <figure class="imgcontainer">
+                <img class="galleryimg right" src="equip menu.png" alt="Equip Menu">
+                <caption>Equip Menu</caption>
+            </figure>
+            <span class="review white"> Use "Equip" in the Main Menu to see 
+                which Weapons/Armors your charachter is equipped with and change them ! </span>
+            </div>
+            <div class="figurecontainer figleft" >
+            <figure class="imgcontainer">
+                <img class="galleryimg left" src="characters menu.jpg" alt="Status Menu">
+                <caption>Status Menu</caption>
+            </figure>
+            <span class="review white"> Use "Status" inside the Main Menu to have 
+                information on the current statistic of each charachter of the party! </span>
+            </div>
+            <div class="figurecontainer figright" >
+            <figure class="imgcontainer">
+                <img class="galleryimg right" src="Charlie.jpg" alt="Character">
+                <caption>Characters</caption>
+            </figure>
+            <span class="review white"> Each Character in the game got their own 
+                    growing pattern and special techniques, you decide your favorites! </span>
+            </div>
+            <div class="figurecontainer figleft" >
+            <figure class="imgcontainer">
+                <img class="galleryimg left" src="technique.jpg" alt="Skills">
+                <caption class="signature">Skill</caption>
+            </figure>
+            <span class="review white"> Each Skill in the Game got its unique
+            parameters! Some are stronger against certain types of Monsters! </span>
+            </div>
+            <div class="figurecontainer figright" >
+            <figure class="imgcontainer">
+                <img class="galleryimg right" src="Hoga.jpg" alt="Monster">
+                <caption>Monsters</caption>
+            </figure>
+            <span class="review white"> Each Monster in the game got their own 
+                styles and techniques, you need to find the best way to defeat them! </span>
+            </div>
+            <div class="figurecontainer figleft" >
+            <figure class="imgcontainer">
+                <img class="galleryimg left" src="Experience.jpg" alt="Experience">
+                <caption>Gaining Experience</caption>
+            </figure>
+            <span class="review white"> To become stronger you will need to Level Up! 
+            Defeat  various enemies to get EXPerience points and Gold! </span>
+            </div>
+            <div class="figurecontainer figright" >
+            <figure class="imgcontainer">
+                <img class="galleryimg right" src="Game Over.jpg" alt="Game Over">
+                <caption>Game Over</caption>
+            </figure>
+            <span class="review white"> If you don't get enough experience and fight 
+            against enemies stronger than you the Game is Over for your party! </span>
+        </div>
+        </div>
+        <div class="clearFloat"></div>
+   </main>
+   <footer>
+    <button id="backtop"><a href="#logo">Back To Top</a></button>
+    <p id="info">For more informations e-mail us on Twincuzp@Gmail.com</p>
+    <div class="clearFloat"></div>
+  </footer>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Media</title>
+    <link rel="stylesheet" href="css/mystyles.css">
+    <link rel="stylesheet" href="css/media.css">
+    <style>
+        #mainTitle{
+            text-align: center;
+            font-size: 3rem;
+            text-transform: uppercase;
+            color: rgb(5, 196, 5);
+            font-weight: bolder;
+            text-shadow: 2px 0rem 2px black
+         }
+         #thunder{
+            font-size: 1.3em;
+            text-transform: uppercase;
+            font-weight: bold;
+            background-image: url("assets/thunder.jpg");
+            background-clip: text;
+            color: transparent;
+            background-position: -20rem;
+         }
+         .player{
+            color: midnightblue; 
+            font-weight: bold;
+         }
+         #exnav1{
+            background-color: rgba(255, 0, 0, 0.5);
+            width: 90%;
+         }
+         #exnav1:hover{
+            background-color:rgba(255, 0, 0, 0.8) ;
+         }
+         #exnav2{
+            background-color: rgba(2, 161, 2, 0.5);
+            width: 90%;
+         }
+         #exnav2:hover{
+            background-color:rgba(2, 161, 2, 0.8); ;
+         }
+         #exnav3{
+            background-color: rgba(138, 43, 226, 0.5);
+            width: 90%;
+         }
+         #exnav3:hover{
+            background-color: rgba(138, 43, 226, 0.8);
+         }
+         #p1{
+            margin-left: 0;
+         }
+         #p2{
+            text-align: left;
+         }
+         #exLink{
+            margin-top: -2rem;
+         }
+         
+         @media only screen and (min-width:992px){
+            #exnav1{
+                width: 65%;
+            }
+
+            #exnav1 a, #exnav2 a, #exnav3 a{
+                margin: 0 0;
+            }
+            #exnav2{
+                width: 60%;
+                text-align: left;
+            }
+            #exnav3{
+                width: 55%;
+                text-align: left;
+            }
+
+            #p1{
+                margin-left: 8rem;
+            }
+            #p2{
+                text-align: auto;
+            }
+            #thunder{
+                font-size: 1.5em;
+            }
+            #exLink{
+                margin-top: auto;
+            }
+        }
+        @media only screen and (max-width: 992px) and (min-width: 600px) {
+            #exnav1{
+                width: 65%;
+            }
+            #exnav2{
+                width: 60%
+            }
+            #exnav3{
+                width: 55%
+            }
+            #exnav1 a, #exnav2 a, #exnav3 a{
+                margin: 0 0;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img id="logo" src="assets/5uvyr1fv.png" alt="logo">
+        <h1 id="title">Twincuz Production</h1>
+        <div class="navigation">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+            <div class="clearFloat"></div>
+        </div>
+    </header>
+    <main> <!-- I have to split the gallery in 3 parts as the file was getting very long and loosing its style-->
+        <h1 id="mainTitle"> Media Gallery</h1>
+        <p class="descriptions">Welcome to our <strong><span style="color: rgba(2, 188, 2, 0.8);">Media</span>
+            <span style="color:rgba(125, 1, 125, 0.8) ;"> Gallery!</span></strong> In here you can find some help
+            to guide you through the amazing world of The Darkness! And you can find some pictures 
+            uploaded on the Web by users while playing the game! <br> <br>
+            If you like to be part of our ever growing Web Site don't esitate to upload
+            your personal screenshots! <br> <span> All you have to do is to press F10 while you gaming
+            and then upload it in our Blog!</span> <br> <br> 
+            Did you spot any Bugs? Or you just find a particular hard part that manage to made you proud 
+            when you pass it? Send us your pictures we will monthly choose the best and update our Gallery! <br> <br>
+            Use the following navigation bar to guide yourself through the pages! 
+        </p> <br> <br>
+        <div class="internalnav">
+            <div><a href="gallery/ourPicture.html">The Darkness, Our Images</a></div> <br>
+            <div><a href="gallery/yourPicture.html">The Darkness, Your Images</a></div> <br>
+            <div><a href="#exLink">External Links</a></div> <br>
+        </div> <br> <br>
+        <div id="mainRef"></div> <!--finally manage with position absolute to give the curtains effect on the
+        picture, took me a bit to figure it out but seems working perfectly now-->
+        <h1 class="subtitles">And The Winner Of The Month is... ?</h1>
+        <div id="Winner"> 
+            <div id="curtains"></div>
+            <img id="winnerimg" src="gallery/winner.jpg" alt="The winner is">
+            <p class="smalltitles white" style="text-transform: uppercase;">Thunderstrucked!</p> <br> <br>
+            <p class="review white"> I bet I can take a picture of your Thunder right on the middle
+                of your attack mate !!! You've been too slow !!!
+            </p> <br> <br>
+            <p class="signature white">Image uploaded by Nina12</p>
+        </div><br><br>
+        <p class="descriptions" id="p1"><span class="player">Congratulation</span>
+             to our player <strong>Nina12</strong> with the best picture of this Month !!!</p> 
+        <p class="descriptions" id="p2">Is hard to get <em id="thunder">Thunderstrucked</em> from and enemy! But maneging to do a picture of the Thunder 
+        while being cast is a <span class="player">Number 1!!!</span></p> <br> <br>
+        <h2 class="subtitles" id="exLink">External Links</h2>
+        <p class="descriptions">And Last but not Least don't forget to :</p> <br>
+        <div class="internalnav">
+            <div id="exnav1"><a href="https://www.youtube.com/" target="_blank">Follow Us On Youtube !</a></div> <br>
+            <div id="exnav2"><a href="error.html">Visit Our !Blog Page!</a></div> <br>
+            <div id="exnav3"><a href="error.html">Download The Last Version Of The Darkness!</a></div> <br>
+        </div> <br> <br>
+    </main>
+</body>
+<footer>
+    <button id="backtop"><a href="#logo">Back To Top</a></button>
+    <p id="info">For more informations e-mail us on Twincuzp@Gmail.com</p>
+    <div class="clearFloat"></div>
+  </footer>
+</html>

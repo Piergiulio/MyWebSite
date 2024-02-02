@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <link rel="stylesheet" href="css/mystyles.css">
+    <link rel="stylesheet" href="css/media.css">
+    <style>
+        #navigator{
+            text-decoration: none;
+            color: chocolate;
+            font-weight: bolder;
+        }
+        #navigator:hover{
+            text-decoration: underline;
+            font-size: 1.1em;
+            color: white;
+        }
+
+        @media only screen and (max-width: 412px) and (min-width: 0px){
+            #firstchild{
+                margin-left: 0.5rem;
+            }
+        }
+        
+    </style> 
+    <!--   Testing Counter with Javascript -->
+    <script>
+        function counter(){
+        let textarea = document.querySelector("textarea")
+        if(textarea.textLength <= 100){
+        document.getElementById("counter").innerHTML = textarea.textLength
+        document.getElementById("counter").style.color = "white"
+        textarea.style.color = "black"
+        }
+        else{
+            document.getElementById("counter").innerHTML = "characters exceeded"
+            document.getElementById("counter").style.color = "red"
+            textarea.style.color = "red"
+        }}
+    </script>
+    
+</head>
+<body>
+    <header>
+        <img id="logo" src="assets/5uvyr1fv.png" alt="logo">
+        <h1 id="title">Twincuz Production</h1>
+        <div class="navigation">
+            <a href="index.html">Home</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="about.html">About Us</a>
+            <div class="clearFloat"></div>
+        </div>
+    </header>
+    <section id="background">
+        <main>
+            <h2 class="subtitles">We Are Here To Help!</h2>
+            <p class="descriptions" style="padding: 0 5rem;">If you got any questions reguarding The Darkness or our 
+                Youtube Channel don't esitate to ask! We can give you any information 
+                you will need! <br> <br>
+                If you want to apply for a role in our Team, send us an email with attached your CV!
+                We will answer you as soon as we got it and we may give you a trial in case you
+                meet our requirements! <br> <br>
+                If it can be of any help, please read our <a href="#faqs" id="navigator">Faq's</a> section at the bottom 
+                of the page! You may find the answer you looking for there ! <br> <br>Hover with the mouse
+            on <a href="#attenctioncontainer" style="color: red; text-decoration: none;"> Read The Rules!</a> to open the box and read them!</p>
+                <div id="formcontainer" ></div> <br> <br>
+                
+                <div class="formcontainer" > 
+                    <form action="error.html" id="form"> <!-- will come back to form section when I will know more about javascript and python!-->
+                        <div class=" flexcontainer">
+                          <div id="label1">
+                          <label  for="name">Your Name</label>
+                          <input type="text" name="name" id="name">
+                        </div>
+                        <div id="label2">
+                           <label  for="email">Your E-mail Adress</label>
+                           <input type="email" name="email" id="email">
+                        </div>  
+                        </div><br> <br>
+                        <label id="label3" for="subject">Subject:</label>
+                        <select name="subject" id="subject" style="width: 70%; height: 2em;">
+                          <option value="The Darkness">The Darkness</option>
+                          <option value="Youtube">Youtube</option>
+                          <option value="Job">Job Enquieries</option>
+                        </select> <br> <br>
+                        <textarea onkeyup="counter()" name="content" id="content"></textarea><br>
+                        <span id="counter">0</span><span>/100</span> 
+                        <button type="submit" name="submit" id="submit">Submit</button>
+
+                    </form>
+                </div> <br> 
+                <div id="attenctioncontainer"> 
+                    <div class="flexcontainer">
+                     <h3 id="attenction"> <img class="icons" src="assets/arrow.jpg" alt="arrow">&nbsp; &nbsp; Read The Rules !!!</h3>   
+                    </div>
+                    <p class="descriptions">The contact us section must be used only for the following 3 reasons :
+                    <p class="descriptions" > 1: Question on The Darkness <br>
+                     2: Question on our Youtube Channel <br>
+                     3: Question about a Job position with CV attached <br> <br>
+                    <span>anything other than that would be considered as spam</span>
+                    </p>
+                    <p class="descriptions" >Any insults or swearing words against our collegues and company will not be tollerated!
+                        And will end up with your E-mail adress being blocked!
+                    </p>
+                    <p class="descriptions">Any material sent to us other than CV's will not be considered, go to our blog instead!</p>
+                    <p class="descriptions">Any threat or any nude inside E-mails would be signalled to the local autorities</p>
+                 <p class="signature">
+                    Thank you for your understanding <br> 
+                    Kindly reguards  <br>
+                    Twincuz Production Group 
+                  </p>
+
+                </div> <!-- description list responsive using media queries-->
+                <h2 class="subtitles" id="faqs">FAQ's</h2>
+                <dt class="question">Q1: Where I can download the file for The Darkness?</dt>
+                <dd class="answer">A1: You can find the link for downloading the file in our Media Gallery page.</dd>
+                <dt class="question">Q2: I've downloaded the file how can I play ?</dt>
+                <dd class="answer">A2: Unzip the file, go inside The Darkness folder and install the file .exe.</dd>
+                <dt class="question">Q3: The File is installed but it seems as the game won't start!</dt>
+                <dd class="answer">A3: Check which version you downloaded and if it's supported by your System,
+                     otherwise try to restart the computer after the installation.</dd>
+                <dt class="question">Q4: How can I get a Screenshot while playing?</dt>
+                <dd class="answer">A4: The screenshot is taken by pressing F10.</dd>
+                <dt class="question">Q5: I've used all the saving slots, how can I create a new saving slot?</dt>
+                <dd class="answer">A5:Go inside the folder "save" and create a new file with .sav extention! <br>
+                Be careful you can only have four at the time, so the only first four files will be displayed
+            inside the game, so you will have to move the new file on the top first places inside the folder.</dd>
+                <dt class="question">Q6: Where I can find your Channel on Youtube?</dt>
+                <dd class="answer">A6: You can find us at the domain www.Youtube/TwincuzP.com.</dd>
+                <dt class="question">Q7: I've sent my CV but never get an answer </dt>
+                <dd class="answer">A7: We scrutinize all the CV and carefully decide who meet the requirements. 
+                    Allow us at least 28 days to get back to you! We will answer either if you pass or not.</dd>
+                <dt class="question">Q8:My Cv got accepted , now what is going to happen?</dt>
+                <dd class="answer">A8: You don't have to do anything else, we will call you to decide a date and time
+                    that suit you for a job interview. Following the interview you will be given the date of your trial
+                    Shift. Best Of Luck!
+                </dd>
+
+            
+        </main>
+        </section>
+        <footer>
+            <button id="backtop"><a href="#logo">Back To Top</a></button>
+            <p id="info">For more informations e-mail us on Twincuzp@Gmail.com</p>
+            <div class="clearFloat"></div>
+          </footer>
+</body>
+</html>

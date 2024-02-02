@@ -1,0 +1,472 @@
+/*-----------------------------------------------------------------------------------------------------
+                    GUIDE ON WHERE TO FIND THE RIGHT PART OF THE CODE YOU LOOKING FOR
+MEDIA QUERIES FOR DESKTOP/LAPTOP DEVICES (LINES 7 TO 275)
+MEDIA QUERIES FOR TABLETS AND MEDIUM DEVICES (LINES 276 TO 493)
+-----------------------------------------------------------------------------------------------------*/
+
+/*SETTING MEDIA QUERIES-----------------------------------------------------*/
+/*LAPTOPS/DESKTOP DEVICES*/
+@media only screen and (min-width: 992px){
+
+/* SETTING UP THE MAIN -----------------------------------------------*/
+     main{
+        width: 75%;
+    }
+/*SETTING UP CONTAINERS-----------------------------------------------*/
+    .container{
+        width: 45%;
+        height: 9rem;
+    }
+    
+    .floatLeft{
+        float: left;
+        margin-left: 3rem;
+        height: fit-content;
+    }
+    .floatRight{
+        float:right;
+        margin-right: 3rem;
+        height: fit-content;
+    }
+    
+    #largercontainer{
+        width: 80%;
+        height: fit-content;
+    }
+    
+    #attenctioncontainer{
+        width: 50%;
+    }
+    
+    #attenctioncontainer:hover{
+        height: 33rem;
+    }
+
+    #attenction{
+        font-size: 2rem;
+    }
+/* SETTING UP TABLES-----------------------------------------------------------------------*/
+    
+    .question{
+        font-size:1.3em;
+    }
+    .answer{
+        font-size: 1.2em;
+    }
+    
+/*SETTING UP THE FORM REQUEST---------------------------------------------*/
+    #form{
+        margin-top: 5rem;
+    }
+
+    #label1{
+        padding-right: 3rem
+    }
+    
+    #content{
+        height: 12rem;
+    }
+/*SETTING UP IMAGES GALLERY AND MEDIA FILES----------------------------------------*/
+    
+    .figurecontainer{
+        width: 36%;
+        height: fit-content;
+        float: left;
+        margin: 2% 9%;
+    }
+    
+    .imgcontainer{
+        width: 75%;
+    }
+    
+    .left:hover{
+        width: 30rem;
+        margin-left: auto;
+    }
+    
+    .right:hover{
+        width: 30rem;
+        margin-left: -17rem;
+    }
+    
+    .figright{
+        margin-left: auto
+    }
+    
+    .internalnav{
+        width: 100%;
+    }
+    
+    .internalnav div{
+        width: 50%;
+    }
+    
+    .internalnav div a{
+        text-align: left;
+    }
+    
+    #Winner{
+        height: 30.5rem;
+    }
+    
+    #winnerimg{
+        height: 17.2rem;
+    }
+    
+/* SETTING UP SECTION OF THE MAIN/INDEX PAGE ------------------------------------*/
+
+.box{
+    width: 90%;
+    height: fit-content;
+}
+
+.content{
+    float: left;
+}
+
+.articles{
+    width: 80%;
+    height: inherit;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+
+.col{
+    float:left;
+    width: 33%;
+    height:inherit;
+}
+
+.col1{
+    border-right: 1px solid black;
+}
+
+.col2{
+    border-right: 1px solid black;
+    margin:0 auto;
+    height: inherit;
+    
+}
+
+.col2 p{
+    margin-top: -0.2rem;
+    font-size: 1vw;
+}
+
+.col3{
+    margin-top: auto;
+}
+
+.col p{
+    font-size: 1vw;
+    padding: 0 2em;
+    height: fit-content;
+    line-height: 1.5em;
+}
+
+.col2, .col3{
+    margin: auto 0px;
+}
+
+#spansig{
+    margin-left: 5.9rem ;
+}
+
+.asides{
+    border-top: none;
+    width: 20% ;
+    height:fit-content;
+    margin-top: auto;
+    
+}
+
+.author{
+    font-size: 1vw ;
+    padding-top: 60%;
+    width: 100%;
+    
+}
+
+.asides li{
+    margin-left: -3rem;
+    font-size: 1vw;
+}
+/* SETTING UP CONTAINERS INSIDE THE MAIN-------------------------------------*/
+
+#firstBox{
+    width:80%;
+    height: fit-content;
+    transition: none;
+}
+
+#firstBox:hover{
+   height: fit-content;
+}
+
+#secondBox{
+    width: 80%;
+    height: fit-content;
+    transition: none
+}
+
+
+#secondBox:hover{
+    height: fit-content;
+}
+
+#thirdBox{
+    width: 80%;
+    height: fit-content;
+    transition: none;
+}
+
+#thirdBox:hover{
+    height: fit-content;
+}
+
+#fourthBox{
+    background-size: cover;
+    width: 80%;
+    height: fit-content;
+    transition: none;
+}
+
+#fourthBox:hover{
+    height: fit-content;
+    background-size: cover;
+}
+
+}
+/*SETTING UP MEDIA QUERIES FOR LAPTOP AND MEDIUM SIZE DEVICES*/
+
+@media only screen and (max-width : 992px) and (min-width: 600px){
+
+    .container{
+        width: 45%;
+        height: 9rem;
+    }
+    .floatLeft{
+        float: left;
+        margin-left: 3rem;
+        height:fit-content;
+    }
+    .floatRight{
+        float:right;
+        margin-right: 3rem;
+        height: fit-content;
+    }
+
+    #largercontainer{
+        width: 70%;
+        height: fit-content;
+    }
+
+    #attenction{
+        font-size: 2rem;
+    }
+
+    #Winner{
+        height: 25.5rem;
+    }
+    
+    #winnerimg{
+        height: 12.2rem;
+    }
+
+    .internalnav{
+    width: 100%;
+    }
+
+   .internalnav div{
+    width: 50%;
+   }
+
+   .internalnav div a{
+    text-align: left;
+   }
+
+   .figurecontainer{
+    width: 36%;
+    height: fit-content;
+    float: left;
+    margin: 2% 7%;
+   }
+
+.imgcontainer{
+    width: 75%;
+}
+
+.left:hover{
+    width: 30rem;
+    margin-left: auto;
+}
+
+.right:hover{
+    width: 30rem;
+    margin-left: -17rem;
+}
+
+#firstBox{
+    width:80%;
+    height: fit-content;
+    transition: none;
+}
+
+#firstBox:hover{
+   height: fit-content;
+}
+
+#secondBox{
+    width: 80%;
+    height: fit-content;
+    transition: none
+}
+
+
+#secondBox:hover{
+    height: fit-content;
+}
+
+#thirdBox{
+    width: 80%;
+    height: fit-content;
+    transition: none;
+}
+
+#thirdBox:hover{
+    height: fit-content;
+}
+
+#fourthBox{
+    background-size: cover;
+    width: 80%;
+    height: fit-content;
+    transition: none;
+}
+
+#fourthBox:hover{
+    height: fit-content;
+    background-size: cover;
+}
+
+}
+/*------------------------------------------------------------------------------------------------*/
+/* VERY SMALL DEVICES --------------------------------------------------------------------------*/
+@media only screen and (max-width : 466px) and (min-width : 0px){
+
+     #title{
+        font-size: 2.7rem;
+     }
+
+     main{
+        margin-top: 0%;
+     }
+
+     .navigation{
+        overflow: hidden;
+        height: 1.8rem;
+     }
+      
+    .col p{
+         height:fit-content;
+              }
+        
+    .col1, .col2, .col3{
+         margin-top: 0;    
+         height: fit-content;
+        }    
+     
+    .asides{
+        margin-top: 0;
+        height: fit-content
+    }
+
+    #spansig{
+        margin-left: 10rem;
+        
+    }
+
+    .author{
+        margin: 0 27%;
+        width: 100%
+        
+    }
+
+    #firstBox{
+        height: 3.5rem;
+     }
+
+    #firstBox:hover{
+        height: fit-content;
+        width : fit-content;    
+    }
+
+    #secondBox{
+        height: 3.5rem;
+    }
+
+    #secondBox:hover{
+        height:fit-content;
+        width : fit-content;
+    }
+
+    #thirdBox{
+        height: 3.5rem;
+    }
+    
+    #thirdBox:hover{
+        height : fit-content;
+        width : fit-content; 
+        border-radius: 10%;    
+    }
+
+    #fourthBox:hover{
+        height: fit-content;
+        width : fit-content;    
+    }
+
+    .internalnav{
+        font-size: 0.6em;
+    }
+
+         
+    .flexcontainer{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-end;
+        
+    } 
+
+    #label1{
+        margin-left: 0;
+            
+    }
+
+    #label2{
+        margin-left:0;
+        margin-top: 1rem;
+    }
+
+    #attenctioncontainer:hover{
+        height: 45rem;
+    }
+
+    #attenction{
+        font-size: x-large;
+    }
+
+    .left:hover{
+        height: 10rem;
+        width: 20rem;
+    }
+    
+    .right:hover{
+        height: 10rem;
+        width: 20rem;
+    }
+
+    #Winner{
+        height: 27rem;
+    }
+}

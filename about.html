@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <link rel="stylesheet" href="css/mystyles.css">
+    <link rel="stylesheet" href="css/media.css">
+    <style>
+        #youtube{
+            font-size: 1em;
+            font-weight: bolder;
+            color: red;
+            text-decoration: none;
+        }
+        #youtube:hover{
+            text-decoration: underline;
+            font-size: 1.1em;
+        }
+        #contact{
+            font-size: 1em;
+            font-weight: bolder;
+            color: blue;
+            text-decoration: none;
+        }
+        #contact:hover{
+            text-decoration: underline;
+            font-size: 1.1em;
+        }
+
+        strong{
+            background-image: linear-gradient(red, darkgoldenrod) ;
+            background-clip: text;
+            color: transparent;
+        }
+        em{
+            background-image: linear-gradient(blue, green);
+            background-clip: text;
+            color: transparent;
+        }
+        #marginspan1{
+            margin-left: 0rem;
+        }
+        #marginspan2{
+            margin-left:0rem; 
+            line-height: 1.8em
+        }
+       
+        @media only screen and (min-width:992px){
+            #marginspan1{
+                margin-left: 5rem;
+            }
+            #marginspan2{
+                margin-left: 16rem;;
+            }
+        }
+
+        @media only screen and (max-width: 412px) and (min-width: 0px){
+            #firstchild{
+                margin-left: 0.7rem;
+            }
+        }
+        
+    </style>
+</head>
+<body>
+    
+    
+    <header>
+        <img id="logo" src="assets/5uvyr1fv.png" alt="logo">
+        <h1 id="title">Twincuz Production</h1>
+        <div class="navigation">
+            <a href="index.html">Home</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="contact.html">Contact Us</a>
+            <div class="clearFloat"></div>
+        </div>
+    </header>
+    <section id="background">
+    <main> <!-- Main section of the about us page, what is the client looking for?-->
+        <h2 class="subtitles">Why Choosing Us</h2>
+        <p class=" descriptions"> <span id="twincuz">Twincuz Production</span> is a group of developer that create RPG's for Computers.
+              the main programs used to develop our games are Unity and Unreal engines.
+              the most famous game we have produced so far is called The Darkness, which
+              consist in an old school RPG game where the main charachter is a young boy
+              named Bill that find himself magically transported in another dimension
+              where he will discover the world is in danger and he would be the only
+              person that has got the inner power to save everyone!
+        </p>
+        <h2 class="subtitles">Our Youtube Page</h1>
+        <p class="descriptions"> <span id="marginspan1" >You</span> can follow us in our 
+            <a href="https://www.youtube.com/" id="youtube" target="_blank"> Youtube</a> 
+            page where we play various game from old consoles. <br>
+            <span id="marginspan2">Like they say 
+                <strong>Oldies But Goldies!!!</strong></span>
+        </p>   <!-- floating containers while using tablets and laptop devices-->
+        <h1 class="subtitles">What People Say About Us</h1>
+        <div class="container floatLeft">
+            <h3 class="smalltitles">Having Fun In The Darkness</h3>
+            <p class="review">Cool story that hook you up untill the end. New game that have the esthetic and the 
+                feelings of the late `80s
+            </p>
+            <p class="signature">John Fire</p>
+        </div>
+        <div class="container floatRight">
+            <h3 class="smalltitles">Online and Offline</h3>
+            <p class="review">I've been following them on Youtube for long time and I had 
+                fun with them both Online and Offline!
+            </p>
+            <p class="signature">Barbara Hull</p>
+        </div>
+        <div class="clearFloat"></div>
+        <br> <br> 
+        <h2 class="subtitles">Meet Our Team</h2>
+        <table class="list"> <!-- table seem responsive on its own while testing media queries-->
+            <tr class="headrow"><th>#</th><th colspan="2">Name/Surname</th><th>Position</th></tr>
+            <tr class="subrow"><td>1</td><td>Piergiulio</td><td>Atzori</td><td>CEO</td></tr>
+            <tr class="subrow"><td>2</td><td>John</td><td>Tain</td><td>General Manager</td></tr>
+            <tr class="subrow"><td>3</td><td>Anita</td><td>Ohara</td><td>Assistant Manager</td></tr>
+            <tr class="subrow"><td>4</td><td>Lewis</td><td>Simpson</td><td>Developer</td></tr>
+            <tr class="subrow"><td>5</td><td>Gemma</td><td>Thompson</td><td>Developer</td></tr>
+            <tr class="subrow"><td>6</td><td>Noemi</td><td>Lewson</td><td>Writer</td></tr>
+            <tr class="subrow"><td>7</td><td>Carl</td><td>West</td><td>Grafic Director</td></tr>
+            <tr class="subrow"><td>8</td><td>Spencer</td><td>Bud</td><td>Grafic Designer</td></tr>
+            <tr class="subrow"><td>9</td><td>Terence</td><td>Hill</td><td>Music Director</td></tr>
+            <tr class="subrow"><td>10</td><td>Lisa</td><td>Holmes</td><td>Social Media</td></tr>
+        </table>
+        <br>
+        <h2 class="subtitles">... And You!</h2>
+        <div class="container" id="largercontainer">
+        <h3 class="smalltitles question">Got some experience in game software developping and fancy to join 
+            our small Team and help us grow?</h3>
+        <p class="review">Go on our <a href="contact.html" id="contact" target="_blank">Contact Us</a> 
+            page and let us know! You can help us on our <strong>Next Project!</strong><br>
+            You can be the Main Character of your own <em>Fantastic Story!</em></p>
+        </dd>
+        <p class="signature">Twincuz Production Group</p>
+    </div>
+    <br><br><br>
+ </main>
+</section>
+  <footer>
+    <button id="backtop"><a href="#logo">Back To Top</a></button>
+    <p id="info">For more informations e-mail us on Twincuzp@Gmail.com</p>
+    <div class="clearFloat"></div>
+  </footer>
+</body>
+</html>
